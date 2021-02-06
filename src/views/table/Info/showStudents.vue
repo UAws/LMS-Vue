@@ -364,7 +364,7 @@ export default {
       }
     },
     handleShowSubject: function(subjects) {
-      if (subjects.length > 0) {
+      if (subjects && subjects.length > 0) {
         subjects.sort((a, b) => a.subjectId - b.subjectId)
         this.currentPersonSubjectData = subjects
         this.dialogSubjectVisible = true

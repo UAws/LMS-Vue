@@ -42,7 +42,7 @@ export function updatePeople(data) {
 export function getPeopleByRoleID(roleId) {
   return request({
     url: `http://localhost:8080/people/role/${roleId}`,
-    method: 'get',
+    method: 'get'
   })
 }
 
